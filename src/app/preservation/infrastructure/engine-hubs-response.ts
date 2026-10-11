@@ -1,6 +1,6 @@
 ﻿import {BaseResource, BaseResponse} from '../../shared/infrastructure/base-response';
 
-export interface EngineHubResponse extends BaseResponse {
+export interface EngineHubResource extends BaseResource {
 
   id: number;
   name: string;
@@ -10,7 +10,9 @@ export interface EngineHubResponse extends BaseResponse {
 }
 
 
+
+
 export interface EngineHubsResponse extends BaseResponse {
 
-  engineHubs: EngineHubResponse[];
+  engineHubs: EngineHubResource[];
 }
