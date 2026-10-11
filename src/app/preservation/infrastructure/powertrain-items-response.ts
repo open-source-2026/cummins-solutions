@@ -19,7 +19,7 @@ export interface PowertrainItemResource extends BaseResource {
   /**
    * The date and time when the powertrain item was registered.
    */
-  registeredAt: Date;
+  registeredAt: string;
 
 }
 
