@@ -21,6 +21,14 @@
     "rights": "Todos los derechos reservados.",
     "powered-by": "Desarrollado con",
     "and": "y"
+  },
+  "engine-hub": {
+    "empty": "Vacío",
+    "total-components": "Total de componentes",
+    "available-capacity": "Capacidad disponible",
+    "my-engine-hubs": "Mis Centros de motores",
+    "loading": "Cargando...",
+    "no-hubs": "No se encontraron Centros de motores."
   }
 
 }

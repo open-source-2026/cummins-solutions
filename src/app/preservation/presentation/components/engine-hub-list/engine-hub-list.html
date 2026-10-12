@@ -1,0 +1,24 @@
+<section aria-labelledby="engine-hubs-title">
+  <h2 id="engine-hubs-title">
+    {{ 'engine-hub.my-engine-hubs' | translate }}
+  </h2>
+
+  @if (preservationStore.loading()) {
+    <p role="status">{{ 'engine-hub.loading' | translate }}</p>
+  } @else if (preservationStore.error()) {
+    <p role="alert">{{ preservationStore.error() }}</p>
+  } @else {
+    <div class="hub-grid">
+      @for (summary of summaries(); track summary.hub.id) {
+        <app-engine-hub-summary
+          [hub]="summary.hub"
+          [items]="summary.items()"
+          [totalComponents]="summary.total()"
+          [availableCapacity]="summary.available() ?? 0"
+        />
+      } @empty {
+        <p>{{ 'engine-hub.no-hubs' | translate }}</p>
+      }
+    </div>
+  }
+</section>

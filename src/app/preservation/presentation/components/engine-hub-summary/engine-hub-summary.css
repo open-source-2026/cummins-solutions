@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+mat-card {
+  height: 100%;
+}
+
+mat-card-content {
+  padding-top: 16px;
+}
+
+mat-card-footer {
+  padding: 0 16px 16px;
+}

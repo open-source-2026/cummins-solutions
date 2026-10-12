@@ -21,6 +21,14 @@
     "rights": "All rights reserved.",
     "powered-by": "Powered by",
     "and": "and"
+  },
+  "engine-hub": {
+    "empty": "Empty",
+    "total-components": "Total Components",
+    "available-capacity": "Available Capacity",
+    "my-engine-hubs": "My Engine Hubs",
+    "loading": "Loading...",
+    "no-hubs": "No Engine Hubs found."
   }
 
 }

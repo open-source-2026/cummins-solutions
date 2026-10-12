@@ -1,26 +1,25 @@
-<mat-card>
-
+<mat-card appearance="outlined">
   <mat-card-header>
-
-    <mat-card-title>{{hub.name}}</mat-card-title>
-    <mat-card-subtitle></mat-card-subtitle>
-
+    <mat-card-title>{{ hub.name }}</mat-card-title>
   </mat-card-header>
 
   <mat-card-content>
-
     @for (item of items; track item.id) {
       <p>{{ item.componentName }}: {{ item.quantity }}</p>
     } @empty {
-      <p>{{ 'empty' | translate }}</p>
+      <p>{{ 'engine-hub.empty' | translate }}</p>
     }
   </mat-card-content>
 
   <mat-card-footer>
+    <p>
+      {{ 'engine-hub.total-components' | translate }}:
+      <strong>{{ totalComponents }}</strong>
+    </p>
 
-    <p>{{ 'total-components' | translate }}: {{ totalComponents }}</p>
-    <p>{{ 'available-capacity' | translate }}: {{ availableCapacity }}</p>
-
+    <p>
+      {{ 'engine-hub.available-capacity' | translate }}:
+      <strong>{{ availableCapacity }}</strong>
+    </p>
   </mat-card-footer>
-
 </mat-card>
